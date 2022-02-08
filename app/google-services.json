@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "927673660233",
+    "firebase_url": "https://fpi-feed-default-rtdb.firebaseio.com",
+    "project_id": "fpi-feed",
+    "storage_bucket": "fpi-feed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927673660233:android:a75dc325ef4287ad1ee098",
+        "android_client_info": {
+          "package_name": "com.bitvilltecnologies.fpifeed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927673660233-6q8i2fs4a9brm2ljl37l6tbdd3fgtis5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3lyfs1ef4RBseOlEn-P78ySjmTfGVFeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927673660233-6q8i2fs4a9brm2ljl37l6tbdd3fgtis5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

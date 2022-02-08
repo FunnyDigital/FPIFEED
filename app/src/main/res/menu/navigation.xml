@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications"
+        android:visible="true" />
+    <item
+        android:id="@+id/schoolportal"
+        android:icon="@drawable/icons8_query_inner_join_32"
+        android:title="Portal"
+        android:visible="true"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/icons8_customer_32"
+        android:title="@string/title_home"
+        android:visible="true" />
+
+
+
+
+
+
+</menu>

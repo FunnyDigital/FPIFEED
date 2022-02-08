@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp"
+    tools:context=".ViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titlezView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/keepcalmmedium"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="true"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/rimageviewView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/edittext_background"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/rdiscriptionvView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/keepcalmmedium"
+            android:minHeight="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="discription of the post "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/keepcalmmedium"
+            android:text="1/12/2021"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="true"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/full_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/keepcalmmedium"
+            android:text="full description "
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

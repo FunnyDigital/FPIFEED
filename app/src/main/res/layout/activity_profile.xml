@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            tools:context="com.patrick.bitvilltenologies.gounihub.Home"
+            tools:showIn="@layout/activity_main">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_below="@+id/EV"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/todo" />
+
+
+            <TextView
+                android:fontFamily="@font/keepcalmmedium"
+                android:id="@+id/EV"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <ListView
+                android:fontFamily="@font/keepcalmmedium"
+                android:id="@+id/listview"
+                style="@android:style/Widget.DeviceDefault.ListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:divider="#8f8f8f"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="158dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edittext_background"
+        android:keepScreenOn="true"
+        app:menu="@menu/navigation"/>
+</RelativeLayout>

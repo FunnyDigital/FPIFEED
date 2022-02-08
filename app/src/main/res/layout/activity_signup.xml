@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+
+
+
+
+    <EditText
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/name11"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="NAME" />
+
+
+    <EditText
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/regnob"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:layout_below="@+id/name11"
+        android:textColorHint="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textCapCharacters"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="REG NO" />
+
+
+    <EditText
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/regnob"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/phone1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/email1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:autofillHints=""
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/editTextpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/phone1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/editTextpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editTextpassword1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="CONFIRM PASSWORD"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <Button
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/signup"
+        android:layout_width="1in"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_trasperant"
+        android:text="SIGN UP"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/spinner1"
+        style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextpassword2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_background"
+        android:dropDownWidth="20dp"
+        android:entries="@array/LEVEL"
+        android:prompt="@string/PROMT"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        android:visibility="visible" />
+
+    <TextView
+        android:fontFamily="@font/keepcalmmedium"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:onClick="login"
+        android:layout_centerHorizontal="true"
+        android:text="already have account? Login"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@+id/editTextpassword2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+</ScrollView>
+
